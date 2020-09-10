@@ -1,0 +1,59 @@
+body,
+html {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
+  text-align: center;
+  font-family: "Source Code Pro", monospace;
+}
+
+#map {
+  height: 40vw;
+  margin-right: 10px;
+  margin-top: 10px;
+}
+
+#map-info h5 {
+  position: inherit;
+  margin-top: 1.555em;
+}
+
+#container {
+  position: absolute;
+  top: 0%;
+  margin-top: 10px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  #container {
+    font-size: small;
+    margin-left: -20px;
+  }
+  #map {
+    height: 40vh;
+  }
+  #map-info h5 {
+    position: absolute;
+    left: 30%;
+    margin-top: 1.555em;
+  }
+  .video-feed {
+    width: 90vw;
+    height: 30vh;
+    margin-bottom: 40px;
+  }
+}
+/*# sourceMappingURL=style.css.map */

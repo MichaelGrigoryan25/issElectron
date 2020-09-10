@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+  <script src="https://unpkg.com/@joergdietrich/leaflet.terminator"></script>
+  <link rel="shortcut icon" href="favicon.ico" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>ISS Live Location API - Michael Grigoryan</title>
+</head>
+
+<body>
+  <div id="container">
+    <!-- Longitude -->
+    <label for="#longitude">Longitude</label>
+    <pre>
+            <span id="longitude">Loading...</span>
+        </pre>
+    <br />
+
+    <!-- Latitude -->
+    <label for="#latitude">Latitude</label>
+    <pre>
+            <span id="latitude">Loading...</span>
+        </pre>
+
+    <br />
+
+    <!-- Timestamp -->
+    <label for="#timestamp">Timestamp</label>
+    <pre>
+            <span id="timestamp">Loading...</span>
+        </pre>
+
+    <br />
+
+    <!-- API Status -->
+    <label for="#status">API Status</label>
+    <pre>
+              <span id="status">Loading...</span>
+        </pre>
+  </div>
+
+  <br />
+
+  <div id="map-container" style="position: absolute; width: 50%; top: 0; right: 0; height: 100%">
+    <div id="map"></div>
+  </div>
+  <div id="map-info" style="
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        margin-right: 320px;
+        margin-bottom: 100px;
+      ">
+    <h5>Initializing the Map</h5>
+  </div>
+
+<!--  <div id="iframe-container" style="
+        position: absolute;
+        bottom: 0;
+        margin-bottom: 50px;
+        margin-left: 25px;
+      ">
+    <iframe class="video-feed" width="560" height="315" src="https://www.youtube-nocookie.com/embed/EEIk7gwjgIM" frameborder="0"
+      allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+-->
+  <h6 style="
+        position: absolute;
+        bottom: 0;
+        margin: 0 auto;
+        margin-bottom: 25px;
+        margin-left: 25px;
+      ">
+    The data updates every 10 seconds. &nbsp; <a href="/iss-api">API</a>
+  </h6>
+
+  <script src="./script.js"></script>
+</body>
+
+</html>

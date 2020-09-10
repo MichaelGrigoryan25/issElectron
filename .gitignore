@@ -1,4 +1,3 @@
-build/
 node_modules
 package-lock.json
 ISS-Live-Locator-win32-x64/
